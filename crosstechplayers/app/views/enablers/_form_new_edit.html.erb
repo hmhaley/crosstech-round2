@@ -1,0 +1,88 @@
+<%= form_for @enabler do |f| %>
+
+<div class="wrapper_div">
+	<div class="center_div">
+		<table>
+			<thead>
+			<tr class="row_odd">
+				<th colspan="2"><h1>ADD a NEW "Enabler" of Innovation</h1></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Prefix or Honorific/Rank:
+				</td>
+				<td><%= f.text_field :prefix, :class => "text_field_width_medium", :placeholder => "                  (exs: Mr, Ms, Dr, Hon, COL)"%>
+				</td>
+			</tr>
+			<tr class="row_odd">
+				<td>First Name:</td>
+				<td><%= f.text_field :firstname, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><%= f.text_field :lastname, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr class="row_odd">
+				<td>Job Title:</td>
+				<td><%= f.text_field :jobtitle, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr>
+				<td>Organization:</td>
+				<td><%= f.text_field :org, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr class="row_odd">
+				<td>Email Address, Main:</td>
+				<td><%= f.text_field :email, :class => "text_field_width_medium", :placeholder => "     (your work email, or the one you check daily)" %>
+				</td>
+			</tr>
+			<tr>
+				<td>Alternate Email:</td>
+				<td><%= f.text_field :altemail, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr class="row_odd">
+				<td>Type of Enabler:</td>
+				<td><%= f.text_field :enabler_type, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr>
+				<td>Mobile Tel:</td>
+				<td><%= f.text_field :mobiletel, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr class="row_odd">
+				<td>Office Tel:</td>
+				<td><%= f.text_field :officetel, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr>
+				<td>Address Street:</td>
+				<td><%= f.text_field :address_street, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr class="row_odd">
+				<td>Address City:</td>
+				<td><%= f.text_field :address_city, :class => "text_field_width_medium" %></td>
+			</tr>
+			<tr>
+				<td>Address State:</td>
+				<td><%= f.text_field :address_state, :class => "text_field_width_short", :placeholder => "   (2 letters only)" %></td>
+			</tr>
+			<tr class="row_odd">
+				<td>Address Zip:</td>
+				<td><%= f.text_field :address_zip, :class => "text_field_width_short" %></td>
+			</tr>
+			<tr>
+				<td>Major Deals:</td>
+				<td><%= f.text_field :major_deals, :class => "text_box_width_long" %></td>
+			</tr>
+			<tr class="row_odd">
+				<td>Notes:</td>
+				<td><%= f.text_field :notes, :class => "text_box_width_long" %></td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td><%= f.submit "Submit" %></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<% end %>

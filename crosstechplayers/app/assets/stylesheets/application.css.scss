@@ -1,0 +1,118 @@
+
+body {
+	background-color: #055154;
+	color: #FFE1BE;
+	font-family: 'Quattrocento', serif;
+}
+h1 {
+	font-family: 'Quattrocento', serif;
+	color: #B5292A;
+	font-size: 40px;
+}
+
+.text_field_width_short {
+	width: 150px;
+	font-size: 16px;
+}
+
+.text_field_width_medium {
+	width: 400px;
+	font-size: 16px;
+}
+
+.text_field_width_long {
+	width: 450px;
+	font-size: 16px;
+}
+
+.text_box_width_long {
+	width: 500px;
+	height: 200px;
+	font-size: 16px;
+}
+
+table {
+	margin-left: 25px;
+	margin-top: 25px;
+	background-color: #C7B29B;
+	color: #457393;
+	padding: 15px;
+	font-weight: 700;
+	border-collapse: collapse;
+}
+
+td {
+	vertical-align: top;
+	padding: 10px 20px 10px 20px;
+	text-align: left;
+	font-size: 16px;
+}
+
+tr {
+	background-color: #FFFAB1;
+}
+
+th {
+
+}
+
+div.wrapper_div {
+	text-align: center;
+}
+
+div.center_div {
+	display: inline-block;
+}
+
+tr.row_odd {
+	background-color: #FFE87F;
+}
+
+td:nth-child(1) {
+	text-align: right;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+a {
+	color: #FFE87F;
+}
+
+input {
+	background-color: #157C7F;
+	color: #FFFAB1;
+	height: 24px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #FFFAB1;
+    opacity: .75;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #FFFAB1;
+   opacity: .75;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #FFFAB1;
+   opacity: .75;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #FFFAB1;
+   opacity: .75;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+ /*@import 'bootstrap';*/

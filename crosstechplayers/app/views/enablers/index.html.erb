@@ -1,0 +1,25 @@
+<div class="wrapper_div">
+	<div class="center_div">
+		<table>
+			<thead>
+			<tr class="row_odd">
+				<th colspan="4"><h1 style="margin:20px">VIEW the "Enablers" of Innovation</h1></th>
+			</tr>
+			</thead>
+			<tbody>
+		<% @enablers.each do |enabler| %>
+			<tr>
+				<td><strong><%= enabler.firstname %></strong>
+				</td>
+				<td><strong><%= enabler.lastname %></strong>
+				</td>
+				<td><%= enabler.jobtitle %></strong>
+				</td>
+				<td><%= enabler.org %></strong>
+				</td>
+			</tr>
+			<% end %>
+			</tbody>
+		</table>
+	</div>
+</div>
