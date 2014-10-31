@@ -1,6 +1,10 @@
 <h1>Editing user</h1>
 
 <%= render 'form' %>
-
+<ul>
+<% @users.each do |u| %>
+	<li><%= u.email %></li>
+	<% end %>
+</ul>
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>

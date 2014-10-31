@@ -1,5 +1,7 @@
 class EnablersController < ApplicationController
 
+before_action :make_sure_logged_in
+
 	def index
 		@enablers = Enabler.all
 	end
@@ -73,4 +75,11 @@ class EnablersController < ApplicationController
 		@enabler.destroy
 		redirect_to enablers_path
 	end
+
+private
+	def make_sure_logged_in
+		if !current_user
+		redirect to new_session_path
+		end
+	end			 
 end

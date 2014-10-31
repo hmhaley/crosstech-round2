@@ -13172,3 +13172,9 @@ Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-29 15:00:08 -
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 15:00:08 -0700
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.9870ms
+  MOPED: Retrying connection attempt 1 more time(s). runtime: n/a
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1000ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3440ms
+  MOPED: Retrying connection attempt 1 more time(s). runtime: n/a
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0840ms
