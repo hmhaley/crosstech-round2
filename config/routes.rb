@@ -3,7 +3,7 @@ Crosstechplayers::Application.routes.draw do
 root "enablers#index"
 
 resources :sessions, only: [:new, :destroy, :create]
-resources :users, except: [:destroy]
+resources :users
 
 # http controller_name ... hash rocket... controller/action pairing... path helper
   get 'enablers/' => 'enablers#index', as: :enablers

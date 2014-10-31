@@ -79,7 +79,7 @@ before_action :make_sure_logged_in
 private
 	def make_sure_logged_in
 		if !current_user
-		redirect to new_session_path
+		redirect_to new_session_path
 		end
 	end			 
 end
