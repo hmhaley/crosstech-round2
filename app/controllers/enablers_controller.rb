@@ -1,6 +1,6 @@
 class EnablersController < ApplicationController
 
-before_action :make_sure_logged_in
+# before_action :make_sure_logged_in
 
 	def index
 		@enablers = Enabler.all
